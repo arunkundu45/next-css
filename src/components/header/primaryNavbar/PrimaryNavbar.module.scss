@@ -1,0 +1,103 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+@import "../../../styles/colors";
+
+.container {
+  height: $primary-navbar-height;
+}
+
+.tagLine {
+  min-width: 50px;
+}
+
+.search {
+  height: 36px;
+  width: 376px;
+  min-width: 100px;
+  background: #f1f1f1;
+
+  @include tablet {
+    display: none;
+  }
+  @include mobile {
+    display: none;
+  }
+}
+
+.searchIconDesktop {
+  margin-right: -$spacing-8;
+  @include tablet {
+    display: none;
+  }
+  @include mobile {
+    display: none;
+  }
+}
+
+.searchIconTabletMobile {
+  @include desktop {
+    display: none;
+  }
+  @include tablet {
+    margin-left: $spacing-60;
+  }
+  @include mobile {
+    margin-left: $spacing-16;
+  }
+}
+
+.links {
+  color: $textColorBlackLight;
+  white-space: nowrap;
+
+  @include tablet {
+    display: none !important;
+  }
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.iconsDesktopTablet {
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.iconsMobile {
+  @include desktop {
+    display: none !important;
+  }
+  @include tablet {
+    display: none !important;
+  }
+}
+
+.iconsMobile {
+  flex: 1;
+}
+
+.icon {
+  color: #937dc2;
+}
+
+.menuIcon {
+  margin-left: $spacing-8;
+  @include desktop {
+    display: none;
+  }
+}
+
+.phoneNumber {
+  margin-right: $spacing-8;
+  @include desktop {
+    display: none;
+  }
+}
+
+.fullDivider {
+  background: $primaryColor;
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}

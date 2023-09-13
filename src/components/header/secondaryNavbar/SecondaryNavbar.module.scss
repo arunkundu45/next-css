@@ -1,0 +1,44 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+@import "../../../styles/colors";
+
+.container {
+  height: $primary-navbar-height;
+  @include tablet {
+    display: none !important;
+  }
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.links {
+  color: $textColorBlackLight;
+}
+
+.icon {
+  color: #937dc2;
+}
+
+.requestCallButton {
+  border: 2px solid $primaryColor;
+  color: $primaryColor;
+  text-transform: unset;
+  padding: $spacing-12 $spacing-32;
+  font-size: $font-size-16;
+  white-space: nowrap;
+  height: 50px;
+}
+
+.fullDivider {
+  background: $primaryColor;
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+}

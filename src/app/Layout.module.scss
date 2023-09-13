@@ -1,0 +1,15 @@
+@import "../styles/variables";
+@import "../styles/mixins";
+
+.headerAndContent {
+  max-width: $desktop;
+  @include mobile {
+    padding: $spacing-0 $spacing-16;
+  }
+  @include tablet {
+    padding: $spacing-0 $spacing-20;
+  }
+  //@include desktop {
+  //  padding: $spacing-0 $spacing-124;
+  //}
+}

@@ -1,0 +1,9 @@
+@import "../../styles/breakpoints";
+@import "../../styles/mixins";
+@import "../../styles/colors";
+
+.container {
+  position: sticky;
+  top: 0;
+  background: $backgroundColorLight;
+}
